@@ -1,0 +1,354 @@
+Prompt: Build an AI Resume & Job Match SaaS Platform
+
+Build a production-ready SaaS web application called CareerPilot AI that helps job seekers optimize their resumes, improve ATS scores, identify skill gaps, match jobs, and prepare for interviews.
+
+Goal
+
+Create an AI-powered platform that:
+
+Parses resumes (PDF/DOCX)
+Calculates ATS compatibility scores
+Compares resumes against job descriptions
+Identifies missing skills
+Recommends improvements
+Matches users with suitable jobs
+Generates personalized interview questions
+Supports subscriptions and recruiter plans
+Tech Stack
+Frontend
+Next.js
+TypeScript
+Tailwind CSS
+Shadcn UI
+Responsive mobile-first design
+Backend
+Python FastAPI
+REST API architecture
+JWT Authentication
+Database
+PostgreSQL
+AI/ML
+TensorFlow
+Scikit-learn
+Sentence Transformers
+spaCy
+Hugging Face Transformers
+Storage
+AWS S3 or equivalent
+Payments
+Stripe
+Razorpay
+Deployment
+Docker
+Kubernetes-ready
+CI/CD pipeline
+User Roles
+Candidate
+
+Can:
+
+Register/login
+Upload resume
+Analyze resume
+Track ATS score
+View skill gaps
+Apply recommendations
+Save job matches
+Generate interview questions
+Recruiter
+
+Can:
+
+Create recruiter profile
+Post jobs
+Search candidates
+View candidate match scores
+Download resumes
+Manage hiring pipeline
+Admin
+
+Can:
+
+Manage users
+Manage subscriptions
+View analytics
+Moderate content
+Feature 1: Resume Parser
+
+Users upload:
+
+PDF
+DOCX
+
+Extract:
+
+Name
+Email
+Phone
+LinkedIn
+Portfolio
+Education
+Certifications
+Skills
+Experience
+Projects
+
+Store structured data.
+
+Output JSON example:
+
+{
+  "name": "John Doe",
+  "email": "john@email.com",
+  "skills": [
+    "Python",
+    "TensorFlow",
+    "AWS"
+  ],
+  "experience": [
+    {
+      "company": "ABC Corp",
+      "role": "ML Engineer"
+    }
+  ]
+}
+Feature 2: ATS Score Engine
+
+Generate ATS score out of 100.
+
+Scoring factors:
+
+Keyword match
+Formatting
+Experience relevance
+Skills relevance
+Education match
+Project relevance
+
+Display:
+
+ATS Score: 82/100
+
+Strengths:
+✓ Python
+✓ TensorFlow
+✓ AWS
+
+Weaknesses:
+✗ Docker
+✗ Kubernetes
+✗ CI/CD
+Feature 3: Skill Gap Analysis
+
+Input:
+
+Resume
+Job Description
+
+Compare and identify:
+
+Missing skills
+Missing certifications
+Missing experience areas
+
+Output:
+
+Missing Skills:
+- Docker
+- Kubernetes
+- Terraform
+
+Missing Certifications:
+- AWS Solutions Architect
+
+Provide learning recommendations.
+
+Feature 4: Job Matching Engine
+
+Build recommendation engine.
+
+Use:
+
+Semantic similarity
+Embeddings
+Skill overlap
+Experience overlap
+
+Return:
+
+Match Score: 91%
+
+Reasons:
+- Python Match
+- TensorFlow Match
+- NLP Experience
+
+Sort jobs by match score.
+
+Feature 5: Interview Preparation Generator
+
+Generate:
+
+Technical questions
+Behavioral questions
+Project-based questions
+Company-specific questions
+
+Example:
+
+Question:
+Explain the difference between TensorFlow and PyTorch.
+
+Expected Answer Topics:
+- Dynamic graphs
+- Production deployment
+- Ecosystem
+Feature 6: Resume Improvement AI
+
+Analyze resume.
+
+Suggest:
+
+Better wording
+Stronger action verbs
+Quantified achievements
+Missing sections
+
+Example:
+
+Before:
+
+"Worked on machine learning projects."
+
+After:
+
+"Developed and deployed 5 machine learning models that improved prediction accuracy by 18%."
+
+Feature 7: Job Board
+
+Recruiters can:
+
+Post jobs
+Edit jobs
+Archive jobs
+
+Candidates can:
+
+Browse jobs
+Filter jobs
+Save jobs
+Apply jobs
+
+Filters:
+
+Location
+Salary
+Experience
+Skills
+Remote
+Feature 8: Analytics Dashboard
+
+Candidate Dashboard:
+
+ATS trend
+Application count
+Interview success rate
+Resume views
+
+Recruiter Dashboard:
+
+Applicants
+Hiring funnel
+Match quality
+Conversion rates
+Feature 9: Subscription System
+Free Plan
+3 resume analyses/month
+Basic ATS score
+Limited interview questions
+Pro Plan (₹299/month)
+Unlimited ATS scans
+Skill gap analysis
+Job matching
+Interview preparation
+Premium Plan (₹999/month)
+AI resume rewrite
+Advanced analytics
+Priority recommendations
+Export reports
+Recruiter Plan
+Candidate search
+Job posting
+Talent analytics
+Resume downloads
+ML Architecture
+
+Build the following ML services:
+
+Resume Embedding Service
+
+Use:
+
+Sentence Transformers
+
+Generate embeddings for:
+
+Resume
+Job description
+Similarity Engine
+
+Use:
+
+Cosine similarity
+
+Calculate:
+
+Resume ↔ Job match
+ATS Prediction Model
+
+TensorFlow model trained on:
+
+Resume quality metrics
+Hiring outcomes
+
+Output:
+
+ATS Probability Score
+Skill Extraction Model
+
+Use:
+
+spaCy NER
+Transformer-based extraction
+
+Identify:
+
+Skills
+Technologies
+Certifications
+Security
+
+Implement:
+
+JWT authentication
+Password hashing
+Rate limiting
+Role-based access control
+Secure file uploads
+GDPR-compliant data handling
+Deliverables
+
+Generate:
+
+Complete database schema
+API documentation
+Frontend pages
+Backend architecture
+ML pipelines
+Docker configuration
+Deployment instructions
+Unit tests
+Integration tests
+Production-ready source code
+
+Design the application to support 100,000+ users and millions of resumes.
